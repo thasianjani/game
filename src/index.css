@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'PixelMix by Andrew Tyler' ;
+    src: url('assets/fonts/pixelmix.ttf');
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'PixelMix by Andrew Tyler', Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertically-center{
+    display: flex;
+    align-items: center;
+}
+
+.page-container{
+    height: calc(100vh - 73.5px);
+}
+
+.btn{
+    padding: 5px 30px;
+    margin: 10px 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 5px 0 #3b4262;
+}
+
+.btn-primary{
+    color: antiquewhite;
+    background-color: #3b4262;
+}

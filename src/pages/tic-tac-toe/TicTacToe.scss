@@ -1,0 +1,30 @@
+.tic-tac-toe{
+    position: relative;
+    .content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        > div{
+            font-size: 30px;
+            min-width: 40px;
+            min-height: 40px;
+            text-align: center;
+            border: 0 solid black;
+            border-width: 1px;
+            padding: 0.5em;
+        }
+    }
+}
+
+.popup-container{
+    position: absolute;
+    height: fit-content;
+    top: 50px;
+    margin: auto;
+    width: 250px;
+    border: 1px solid #b5b5b5;
+    padding: 10px;
+    border-radius: 5px;
+    span{
+    
+    }
+}

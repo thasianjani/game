@@ -1,0 +1,96 @@
+.header{
+    padding: 16px 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    a{
+        color: #3b4262;
+        text-decoration: none;
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+}
+
+.wrap-menu{
+    > a{
+        margin: 0 10px;
+    }
+}
+
+.tic-tac-toe-icon{
+    height: 36px;
+    width: 29px;
+    position: relative;
+    span{
+        margin: 2px;
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .line-1,.line-2{
+        position: absolute;
+        border: 1px solid;
+    }
+
+    .line-1{
+        width: 30px;
+        top: 19px;
+        rotate: 90deg;
+        left: -2px;
+    }
+
+    .line-2{
+        width: 26px;
+        top: 18px;
+    }
+
+}
+
+.tic-tac-toe-icon:hover{
+    >div:nth-child(1) span:nth-child(2){
+        animation: small-to-big 1s;
+        animation-delay: 0.3s;
+    }
+
+    >div:nth-child(2) span:nth-child(2){
+        animation: small-to-big 1s;
+        animation-delay: 0s;
+    }
+
+}
+
+.rock-paper-scissors-icon{
+    img{
+        width: 20px;
+    }
+
+    span{
+        margin: 0 5px;
+    }
+}
+
+.rock-paper-scissors-icon:hover{
+
+    > img:nth-child(1){
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+
+    >img:nth-child(3){
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
+}
+
+@keyframes small-to-big{
+    0%{
+        font-size: 0;
+    }
+
+    50%{
+        font-size: 14px;
+    }
+}

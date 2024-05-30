@@ -1,0 +1,184 @@
+.rock-paper-scissors{
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height: calc(100vh - 113.5px);
+    padding: 20px;
+    position: relative;
+    .header-rsp{
+        display: flex;
+        justify-content: space-between;
+        min-width: 200px;
+        width: 450px;
+        margin: auto;
+        border: 3px solid hsl(217, 16%, 45%);
+        border-radius: 15px;
+        padding: 20px;
+        color: white;
+
+        > div:nth-child(2){
+            letter-spacing: 2px;
+            text-align: center;
+            > div:nth-child(2){
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .wrap-items{
+        margin: auto;
+        width: 500px;
+        position: relative;
+        height: calc(100vh - 259.5px);
+        
+        .show-item-background{
+            position: absolute;
+            width: inherit;
+            display: flex;
+            justify-content: center;
+            top: 80px;
+
+            img{
+                width: 300px;
+            }
+        }
+
+        .icon-circle{
+            cursor: pointer;
+            position: absolute;
+            // background-color: white;
+            // border-radius: 50%;
+            padding: 10%;
+            height: fit-content;
+            width: fit-content;
+            z-index: 1;
+
+            img{
+                width: 40px;
+            }
+        }
+
+        .icon-circle::before{
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            top: -15px;
+            left: -15px;
+            height: 110px;
+            width: 110px;
+            z-index: -1;
+            box-shadow: inset 0 -4px 0px 1px rgba(0, 0, 0, 0.1607843137);
+        }
+
+        .icon-circle::after{
+            content: "";
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            height: 80px;
+            width: 80px;
+            z-index: -1;
+            box-shadow: inset 0 4px 0px 1px rgba(0, 0, 0, 0.1607843137);
+        }
+
+        .paper{
+            top: 50px;
+            left: 70px;
+            padding: 15.922px 20px;
+        }
+
+        .paper::before{
+            background-image: linear-gradient(hsl(230, 89%, 62%) , hsl(230, 89%, 65%));
+        }
+
+        .scissors{
+            top: 50px;
+            right: 70px;
+            padding: 17.258px 20px;
+        }
+
+        .scissors::before{
+            background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+        }
+
+        .rock{
+            bottom: 40px;
+            left: 210px;
+            padding: 20px;
+        }
+
+        .rock::before{
+            background-image: linear-gradient(hsl(349, 71%, 52%) , hsl(349, 70%, 56%));
+        }
+    }
+
+    .center-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .rules{
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        border-radius: 15px;
+        .header-rules{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+            button{
+                cursor: pointer;
+                font-family: 'PixelMix by Andrew Tyler', Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+
+    .btn-close{
+        background-color: transparent;
+        border: none;
+        color: hsl(229, 25%, 31%);
+    }
+
+    .btn-rules{
+        text-align: right;
+        button{
+            cursor: pointer;
+            background-color: #192547;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 11px;
+            font-family: 'PixelMix by Andrew Tyler', Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-11{
+    font-size: 11px;
+}
+
+.fs-34{
+    font-size: 34px;
+}
+
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+
+.bg-modal{
+    background-color: #00000069;
+}

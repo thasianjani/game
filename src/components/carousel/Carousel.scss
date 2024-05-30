@@ -1,0 +1,292 @@
+
+.carousel-container{
+    position: relative;
+    width: fit-content;
+    height: 83px;
+    >div:nth-child(1){
+        width: 0;
+        height: 0;
+        border-right: 50px solid transparent;
+        border-left: 50px solid transparent;
+        border-bottom: 20px solid black;
+    }
+    >div:nth-child(2){
+        position: absolute;
+        top: 40px;
+    }
+
+    img{
+        width:40px;
+        height:40px;
+    }
+    
+    .wrap-horse{
+        // max-height: 20px;
+        position: absolute;
+        >img:nth-child(1){
+            position: absolute;
+            bottom: 20px;
+            left: 15px;
+            height: 55px;
+        }
+
+    }
+
+    .wrap-horse:nth-child(1){
+        top: 0;
+        left: 0;  
+        animation: carousel-one 2s infinite;
+    }
+
+    .wrap-horse:nth-child(2){
+        top: 5px;
+        left: 30px; 
+        animation: carousel-two 2s infinite;
+    }
+
+    .wrap-horse:nth-child(3){
+        top: 0;
+        left: 50px; 
+        animation: carousel-three 2s infinite;
+    }
+
+    .wrap-horse:nth-child(4){
+        top: -10px;
+        left: 30px; 
+        animation: carousel-four 2s infinite;
+    }
+}
+
+.carousel-container.small{
+    height: 41.5px;
+    >div:nth-child(1){
+        border-right: 25px solid transparent;
+        border-left: 25px solid transparent;
+        border-bottom: 10px solid black;
+    }
+    >div:nth-child(2){
+        top: 20px;
+    }
+
+    img{
+        width:20px;
+        height:20px;
+    }
+    
+    .wrap-horse{
+        >img:nth-child(1){
+            bottom: 10px;
+            left: 7.5px;
+            height: 27.5px;
+        }
+
+    }
+
+    .wrap-horse:nth-child(1){
+        top: 0;
+        left: 0;  
+        animation: small-carousel-one 2s infinite;
+    }
+
+    .wrap-horse:nth-child(2){
+        top: 2.5px;
+        left: 15px; 
+        animation: small-carousel-two 2s infinite;
+    }
+
+    .wrap-horse:nth-child(3){
+        top: 0;
+        left: 25px; 
+        animation: small-carousel-three 2s infinite;
+    }
+
+    .wrap-horse:nth-child(4){
+        top: -5px;
+        left: 15px; 
+        animation: small-carousel-four 2s infinite;
+    }
+}
+
+@keyframes carousel-one{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: -8px;
+        left: 30px;
+    }
+    50%{
+        top: 0;
+        left: 60px;
+    }
+    75%{
+        top: 5px;
+        left: 30px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }    
+}
+
+@keyframes carousel-two{
+    0%{
+        top: 5px;
+        left: 30px; 
+    }
+    25%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: -8px;
+        left: 30px;
+    }
+    75%{
+        top: 0;
+        left: 60px;
+    }
+    100%{
+        top: 5px;
+        left: 30px;
+    }    
+}
+
+@keyframes carousel-three{
+    0%{
+        top: 0;
+        left: 60px;
+    }
+    25%{
+        top: 5px;
+        left: 30px;
+    }
+    50%{
+        top: 0;
+        left: 0;
+    }
+    75%{
+        top: -8px;
+        left: 30px;
+    }
+    100%{
+        top: 0;
+        left: 60px;
+    }    
+}
+
+@keyframes carousel-four{
+    0%{
+        top: -8px;
+        left: 30px; 
+    }
+    25%{
+        top: 0;
+        left: 60px;
+    }
+    50%{
+        top: 5px;
+        left: 30px;
+    }
+    75%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: -8px;
+        left: 30px;
+    }    
+}
+
+@keyframes small-carousel-one{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: -4px;
+        left: 15px;
+    }
+    50%{
+        top: 0;
+        left: 30px;
+    }
+    75%{
+        top: 2.5px;
+        left: 15px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }    
+}
+
+@keyframes small-carousel-two{
+    0%{
+        top: 2.5px;
+        left: 15px; 
+    }
+    25%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: -4px;
+        left: 15px;
+    }
+    75%{
+        top: 0;
+        left: 30px;
+    }
+    100%{
+        top: 2.5px;
+        left: 15px;
+    }    
+}
+
+@keyframes small-carousel-three{
+    0%{
+        top: 0;
+        left: 30px;
+    }
+    25%{
+        top: 2.5px;
+        left: 15px;
+    }
+    50%{
+        top: 0;
+        left: 0;
+    }
+    75%{
+        top: -4px;
+        left: 15px;
+    }
+    100%{
+        top: 0;
+        left: 30px;
+    }    
+}
+
+@keyframes small-carousel-four{
+    0%{
+        top: -4px;
+        left: 15px; 
+    }
+    25%{
+        top: 0;
+        left: 30px;
+    }
+    50%{
+        top: 2.5px;
+        left: 15px;
+    }
+    75%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: -4px;
+        left: 15px;
+    }    
+}
